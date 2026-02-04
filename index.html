@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart City Complaint Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+
+  <div class="container">
+    <h1>🏙️ Smart City Complaint Register</h1>
+
+    <!-- Complaint Form -->
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <select id="type" required>
+        <option value="">Select Complaint Type</option>
+        <option value="Road Issue">Road Issue</option>
+        <option value="Water Supply">Water Supply</option>
+        <option value="Electricity">Electricity</option>
+        <option value="Garbage">Garbage</option>
+      </select>
+
+      <textarea id="message" placeholder="Describe your complaint" required></textarea>
+
+      <button type="submit">Submit Complaint</button>
+    </form>
+
+    <!-- Clear Button -->
+    <button id="clearBtn" class="clear-btn">Clear All Complaints</button>
+
+    <!-- Complaint List -->
+    <ul id="complaintList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
